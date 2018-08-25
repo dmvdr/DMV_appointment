@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Mar 13 11:27:10 2014
+Created on Fri Aug 24 18:00:10 2018
 
 @author: HadoopIt
 """
@@ -11,16 +11,16 @@ import requests
 import datetime
 
 output_folder = os.getcwd() # set the folder in which you want to place the output file
-test_in_days = 10           # looking for behind-the-wheel driving test within the next 'test_in_days' days
+test_in_days = 5            # looking for behind-the-wheel driving test within the next 'test_in_days' days
 first_name = ''             # Your first name in CAPITAL letter
 last_name = ''              # Your last name in CAPITAL letter
 dl_number = ''              # Your driving permit number
-tel_area = ''               # 3 digits: (650)xxx-xxxx
-tel_prefix = ''             # 3 digits: (xxx)123-xxxx
-tel_suffix = ''             # 4 digits: (xxx)xxx-4567
-birth_month = ''            # e.g. 05
-birth_day = ''              # e.g. 06
-birth_year = ''             # e.g. 1990
+tel_area = ''               # 3 digits: (626)xxx-xxxx
+tel_prefix = ''             # 3 digits: (xxx)202-xxxx
+tel_suffix = ''             # 4 digits: (xxx)xxx-3604
+birth_month = ''            # e.g. 11
+birth_day = ''              # e.g. 18
+birth_year = ''             # e.g. 1979
 
 # appointment for behind-the-wheel test
 test_url = 'https://www.dmv.ca.gov/wasapp/foa/findDriveTest.do'
@@ -30,9 +30,9 @@ test_url = 'https://www.dmv.ca.gov/wasapp/foa/findDriveTest.do'
 # for complete DMV office list, please go to the below address, and view page source in your browser
 # https://www.dmv.ca.gov/foa/clear.do?goTo=driveTest&localeName=en
 OFFICES = {
-    'REDWOOD': '548',
-    'SAN MATEO': '593',
-    'SANTA CLARA': '632',
+    'LINCOLN PARK': '548',
+    'PASADENA': '593',
+    'EL MONTE': '632',
 }
 
 def main():
